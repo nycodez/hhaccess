@@ -34,8 +34,15 @@ body {
 	color: #dddddd;
 }
 #banner {
-	height: 450px;
+	height: 250px;
 	background-color: #336699;
+	text-align: center;
+}
+#banner h1 {
+	margin: 0px;
+	padding: 80px;
+	font: 4em Tahoma;
+	color: white;
 }
 #signup {
 	background-color: #dddddd;
@@ -76,9 +83,41 @@ body {
 	height: 100px;
 	text-align: right;
 }
+canvas {
+	width: 600px;
+	height: 200px;
+//	border: solid 1px black;
+}
 </style>
 </head>
-<body>
+<body onload="start()">
+
+<script type ="application/javascript" language="javascript">
+var ctx;
+var circleX = -5;
+function start()
+{
+	var element = document.getElementById("canvas");
+	ctx = element.getContext("2d");
+
+	var interval = setInterval(animate,100/50);
+}
+function animate()
+{
+	circleX = circleX + 3;
+	draw(circleX, 75);
+}
+function draw(x,y) 
+{
+	ctx.fillStyle= "rgb(0,0,100)";
+	ctx.arc(x,y,1,0,Math.PI*2,true);
+	ctx.fill();
+
+ctx.font = "1.5em Tahoma";
+ctx.fillText("Home Health Access", 50, 70);
+}
+</script>
+
 <div id=message></div>
 <div id=menu>
 	<ul>
@@ -87,9 +126,10 @@ body {
 	<li><a href="/blog">Blog</a></li>
 	<li><a href="/contact">Contact</a></li>
 	<li><a href="/help">Help</a></li>
+	<li><a href="/agency">Login</a></li>
 	</ul>
 </div>
-<div id=banner></div>
+<div id=banner><canvas id="canvas"></canvas></div>
 <div id=signup>Get started right away. No credit card required. <a id="tour-button" href="/tour">See it in action</a> <a id="signup-button" href="/signup">Sign up for free</a></div>
 <div id=map>
 	<p align=center>

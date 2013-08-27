@@ -1,6 +1,6 @@
 <?php
 
-require_once 'config.php';
+require_once '../config.php';
 session_start(); 
 
 $lang = $_SESSION['lang'];
@@ -27,9 +27,9 @@ if(mysql_num_rows($d) !== 1)
 <Response>
 <?php
 if($lang == 'en')
-	echo '<Say loop="5" language="en">The number you are calling from has not been registered. Please call your agency.</Say>';
+	echo '<Say loop="5" language="en">The number you are calling from has not been registered. Please have the client call their home health care agency to update their telephone numbers on file.</Say>';
 elseif($lang == 'es')
-	echo '<Say loop="5" language="es">El numero del cual llama no se ha registrado. Por favor llame a su agencia.</Say>';
+	echo '<Say loop="5" language="es">El numero del cual está llamando aún no se ha registrado. Por favor pida al cliente que llame a su agencia para actualizar sus números de telefono.</Say>';
 ?>
 </Response>
 <?php
