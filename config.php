@@ -1,6 +1,6 @@
 <?php
-define('DBNAME', 'hha');
-define('DBUSER', 'hha');
+define('DBNAME', 'hhaccess');
+define('DBUSER', 'hhaccess');
 define('DBPASS', 'wQmTGAE2uqQ3fJ8m');
 define('DBHOST', 'localhost');
 function connectDB($database = DBNAME, $user = DBUSER, $pass = DBPASS, $hostname = DBHOST)
