@@ -21,7 +21,7 @@ body {
 	background-color: #336699;
 }
 #menu ul {
-	margin: 0 50 0 50;
+	margin: 0 50 0 0;
 }
 #menu ul li {
 	float: left;
@@ -40,7 +40,7 @@ body {
 #footer {
 	font: .8em Verdana;
 	color: #cccccc;
-	height: 100px;
+	height: 50px;
 	text-align: right;
 }
 .dashboardWidget {
@@ -79,9 +79,9 @@ body {
 	padding: 20px;
 	margin: 50 auto 50;
 	width: 500px;
-	background-color: beige;
+	background-color: #EFF9FC;
 }
-.defaultForm input,textarea {
+.defaultForm input:not([type=submit]):not([type=file]):not([type=button]), textarea {
 	width: 300px;
 	margin: 10px;
 	padding: 3px;
@@ -90,12 +90,33 @@ body {
 	background-color: #fffffd;
 	border-radius: 3px;
 }
+.defaultForm input[type=submit],[type=file],[type=button] {
+	width: 100px;
+	margin: 5px;
+	padding: 3px;
+	font: 1.2em Arial;
+	color: #333333;
+	background-color: #A6DEEE;
+	border-radius: 9px;
+}
 .defaultForm label {
+	text-align: right;
 	float: left;
 	font: 1.1em Arial;
 	margin: 10px;
 	padding: 3px;
 	width: 100px;
+	color: #888888;
+}
+.defaultTable {
+	width: 100%;
+	font: .9em Verdana;
+}
+.defaultTable th {
+	text-align: left;
+}
+.defaultTable a {
+	text-decoration: none;
 }
 </style>
 </head>
@@ -103,9 +124,10 @@ body {
 <div id=message></div>
 <div id=menu>
 	<ul>
+	<li><a href="/">HH</a></li>
 	<li><a href="/agency">Dashboard</a></li>
 	<li><a href="/agency/clients">Clients</a></li>
-	<li><a href="/agency/attendants">HH Attendants</a></li>
+	<li><a href="/agency/attendants">Attendants</a></li>
 	<li><a href="/agency/users">Agency Staff</a></li>
 	<li><a href="/agency/reports">Reports</a></li>
 	<li><a href="/agency/logout">Logout</a></li>

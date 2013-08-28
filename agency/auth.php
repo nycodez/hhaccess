@@ -2,11 +2,7 @@
 session_start();
 function showLogin()
 {
-	echo '<form method=post>
-		<input type=text name=login placeholder=username />
-		<input type=password name=pass placeholder=password />
-		<input type=submit name=func value=Login />
-		</form>';
+	require 'login.php';
 	exit;
 }
 function authenticateUser($login, $password)
