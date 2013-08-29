@@ -143,6 +143,10 @@ class Attendant
 		{
 			$qs .= "and L.`callAttendant` = '$id'\n";
 		}
+		else
+		{
+			$qs .= "and L.`callAttendant` != 0\n";
+		}
 		if($fromDate)
 		{
 //			$fromDate = date("Y-m-d h:i:s", strtotime($fromDate));
