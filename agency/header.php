@@ -94,9 +94,8 @@ body {
 	border-radius: 3px;
 }
 .defaultForm input[type=submit],[type=file],[type=button] {
-	width: 100px;
 	margin: 5px;
-	padding: 3px;
+	padding: 3 10 3 10;
 	font: 1.2em Arial;
 	color: #333333;
 	background-color: #A6DEEE;

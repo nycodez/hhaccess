@@ -21,10 +21,12 @@ if($_REQUEST['func'] == 'Preview')
 
 	$fdf_data_strings = array
 		(
-		 '_2_PATIENT_S_NAME_Last_Name__First_Name__Middle_Initial[1]' => $clientInfo['clientName'],
-		 '_2_PATIENT_S_NAME_Last_Name__First_Name__Middle_Initial[2]' => $clientInfo['clientName'],
-		 '_2_PATIENT_S_NAME_Last_Name__First_Name__Middle_Initial[3]' => $clientInfo['clientName'],
-		 'topmostSubform[0]' => $clientInfo['clientName'],
+		 'patientsNameLastFirstMiddleInitial' => $clientInfo['clientName'],
+		 'patientsAddressNoStreet' => $clientInfo['clientAddress'],
+		 'patientsCity' => $clientInfo['clientCity'],
+		 'patientsState' => $clientInfo['clientState'],
+		 'patientsZip' => $clientInfo['clientZip'],
+		 'patientsPhoneNumber' => $clientInfo['clientPhone'],
 		);
 
 	// Used for radio buttons and check boxes

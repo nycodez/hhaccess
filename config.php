@@ -1,5 +1,6 @@
 <?php
-define('DBNAME', 'hhaccess');
+$uri = explode('.', $_SERVER['SERVER_NAME']);
+define('DBNAME', $uri[0]);
 define('DBUSER', 'hhaccess');
 define('DBPASS', 'wQmTGAE2uqQ3fJ8m');
 define('DBHOST', 'localhost');
