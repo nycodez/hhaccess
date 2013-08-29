@@ -1,0 +1,888 @@
+%FDF-1.2
+%‚„œ”
+1 0 obj 
+<<
+/FDF 
+<<
+/Fields [
+<<
+/V ()
+/T (epsdtFamilyPlan6)
+>> 
+<<
+/V ()
+/T (patientsRelationshipToInsuredSpouse)
+>> 
+<<
+/V ()
+/T (otherInsuredsPolicyOrGroupNumber)
+>> 
+<<
+/V ()
+/T (patientsSexMale)
+>> 
+<<
+/V ()
+/T (patientsSignatureDate)
+>> 
+<<
+/V ()
+/T (acceptAssignmentNo)
+>> 
+<<
+/V ()
+/T (patientsNameLastFirstMiddleInitial)
+>> 
+<<
+/V ()
+/T (diagnosis1)
+>> 
+<<
+/V ()
+/T (diagnosis2)
+>> 
+<<
+/V ()
+/T (diagnosis3)
+>> 
+<<
+/V ()
+/T (diagnosis4)
+>> 
+<<
+/V ()
+/T (patientsRelationshipToInsuredSelf)
+>> 
+<<
+/V ()
+/T (conditionRelatedToAutoAccidentNo)
+>> 
+<<
+/V ()
+/T (patientStatusMarried)
+>> 
+<<
+/V ()
+/T (tricarechampus)
+>> 
+<<
+/V ()
+/T (patientHospitalizedToMonth)
+>> 
+<<
+/V ()
+/T (daysOrUnits1)
+>> 
+<<
+/V ()
+/T (daysOrUnits2)
+>> 
+<<
+/V ()
+/T (daysOrUnits3)
+>> 
+<<
+/V ()
+/T (daysOrUnits4)
+>> 
+<<
+/V ()
+/T (daysOrUnits5)
+>> 
+<<
+/V ()
+/T (daysOrUnits6)
+>> 
+<<
+/V ()
+/T (medicaid)
+>> 
+<<
+/V ()
+/T (datesOfService5FromDay)
+>> 
+<<
+/V ()
+/T (patientsTaxIdEin)
+>> 
+<<
+/V ()
+/T (conditionRelatedToAutoAccidentState)
+>> 
+<<
+/V ()
+/T (patientHospitalizedFromDay)
+>> 
+<<
+/V ()
+/T (datesOfService5ToMonth)
+>> 
+<<
+/V ()
+/T (medicaidResumbissionCode)
+>> 
+<<
+/V ()
+/T (chargesDollars6)
+>> 
+<<
+/V ()
+/T (chargesDollars5)
+>> 
+<<
+/V ()
+/T (chargesDollars4)
+>> 
+<<
+/V ()
+/T (balanceDueDollars)
+>> 
+<<
+/V ()
+/T (chargesDollars3)
+>> 
+<<
+/V ()
+/T (patientFirstDateSimilarIllnessDay)
+>> 
+<<
+/V ()
+/T (chargesDollars2)
+>> 
+<<
+/V ()
+/T (datesOfService2FromDay)
+>> 
+<<
+/V ()
+/T (chargesDollars1)
+>> 
+<<
+/V ()
+/T (patientsSignature)
+>> 
+<<
+/V ()
+/T (datesOfService1ToMonth)
+>> 
+<<
+/V ()
+/T (otherInsuredsNameLastFirstMiddleInitial)
+>> 
+<<
+/V ()
+/T (patientsTaxIdNumber)
+>> 
+<<
+/V ()
+/T (patientsTaxIdSsn)
+>> 
+<<
+/V ()
+/T (datesOfService3ToYear)
+>> 
+<<
+/V ()
+/T (datesOfService4ToDay)
+>> 
+<<
+/V ()
+/T (datesOfService6FromYear)
+>> 
+<<
+/V ()
+/T (datesOfService4ToYear)
+>> 
+<<
+/V ()
+/T (grouphealthplan)
+>> 
+<<
+/V ()
+/T (conditionRelatedToEmploymentYes)
+>> 
+<<
+/V ()
+/T (otherInsuredsSexMale)
+>> 
+<<
+/V ()
+/T (datesOfService1FromDay)
+>> 
+<<
+/V ()
+/T (billingProviderNpiA)
+>> 
+<<
+/V ()
+/T (acceptAssignmentYes)
+>> 
+<<
+/V ()
+/T (datesOfService4ToMonth)
+>> 
+<<
+/V ()
+/T (datesOfService5FromYear)
+>> 
+<<
+/V ()
+/T (patientsSexFemale)
+>> 
+<<
+/V ()
+/T (billingProviderAreaCode)
+>> 
+<<
+/V ()
+/T (billingProviderInfo)
+>> 
+<<
+/V ()
+/T (datesOfService4FromDay)
+>> 
+<<
+/V ()
+/T (modifier1_1)
+>> 
+<<
+/V ()
+/T (insuredsZip)
+>> 
+<<
+/V ()
+/T (modifier3_1)
+>> 
+<<
+/V ()
+/T (patientCurrentIllnessYear)
+>> 
+<<
+/V ()
+/T (patientHospitalizedFromMonth)
+>> 
+<<
+/V ()
+/T (insuredsBirthDay)
+>> 
+<<
+/V ()
+/T (nameOfReferringProviderOrOtherSource)
+>> 
+<<
+/V ()
+/T (patientFullTimeStudent)
+>> 
+<<
+/V ()
+/T (modifier5_1)
+>> 
+<<
+/V ()
+/T (patientsZip)
+>> 
+<<
+/V ()
+/T (diagnosis1_2)
+>> 
+<<
+/V ()
+/T (patientHospitalizedFromYear)
+>> 
+<<
+/V ()
+/T (diagnosis3_2)
+>> 
+<<
+/V ()
+/T (amountPaidDollars)
+>> 
+<<
+/V ()
+/T (amountPaidCents)
+>> 
+<<
+/V ()
+/T (patientsPhoneNumber)
+>> 
+<<
+/V ()
+/T (insuredsInsurancePlanOrProgram)
+>> 
+<<
+/V ()
+/T (insuredsAnotherPlanYes)
+>> 
+<<
+/V ()
+/T (patientUnableToWorkFromDay)
+>> 
+<<
+/V ()
+/T (insuredsAnotherPlanNo)
+>> 
+<<
+/V ()
+/T (cptHcpcs6)
+>> 
+<<
+/V ()
+/T (cptHcpcs5)
+>> 
+<<
+/V ()
+/T (patientHospitalizedToDay)
+>> 
+<<
+/V ()
+/T (cptHcpcs4)
+>> 
+<<
+/V ()
+/T (patientsState)
+>> 
+<<
+/V ()
+/T (insuredsSexMale)
+>> 
+<<
+/V ()
+/T (cptHcpcs3)
+>> 
+<<
+/V ()
+/T (cptHcpcs2)
+>> 
+<<
+/V ()
+/T (cptHcpcs1)
+>> 
+<<
+/V ()
+/T (other)
+>> 
+<<
+/V ()
+/T (patientUnableToWorkToMonth)
+>> 
+<<
+/V ()
+/T (totalChargeCents)
+>> 
+<<
+/V ()
+/T (datesOfService3ToDay)
+>> 
+<<
+/V ()
+/T (serviceFacilityNpiA)
+>> 
+<<
+/V ()
+/T (insuredsCity)
+>> 
+<<
+/V ()
+/T (patientUnableToWorkToYear)
+>> 
+<<
+/V ()
+/T (patientsBirthMonth)
+>> 
+<<
+/V ()
+/T (otherInsuredsBirthDay)
+>> 
+<<
+/V ()
+/T (conditionRelatedToAutoAccidentYes)
+>> 
+<<
+/V ()
+/T (patientsBirthYear)
+>> 
+<<
+/V ()
+/T (otherInsuredsBirthYear)
+>> 
+<<
+/V ()
+/T (patientHospitalizedToYear)
+>> 
+<<
+/V ()
+/T (patientFirstDateSimilarIllnessYear)
+>> 
+<<
+/V ()
+/T (datesOfService4FromYear)
+>> 
+<<
+/V ()
+/T (patientCurrentIllnessMonth)
+>> 
+<<
+/V ()
+/T (datesOfService3FromDay)
+>> 
+<<
+/V ()
+/T (datesOfService1FromMonth)
+>> 
+<<
+/V ()
+/T (patientStatusOther)
+>> 
+<<
+/V ()
+/T (originalRefNo)
+>> 
+<<
+/V ()
+/T (datesOfService3ToMonth)
+>> 
+<<
+/V ()
+/T (outsideLabNo)
+>> 
+<<
+/V ()
+/T (PICA)
+>> 
+<<
+/V ()
+/T (billingProviderPhoneNumber)
+>> 
+<<
+/V ()
+/T (conditionRelatedToOtherAccidentYes)
+>> 
+<<
+/V ()
+/T (datesOfService1FromYear)
+>> 
+<<
+/V ()
+/T (insuredsIdNumber)
+>> 
+<<
+/V ()
+/T (patientEmployed)
+>> 
+<<
+/V ()
+/T (balanceDueCents)
+>> 
+<<
+/V ()
+/T (datesOfService2FromMonth)
+>> 
+<<
+/V ()
+/T (patientUnableToWorkFromMonth)
+>> 
+<<
+/V ()
+/T (insuredsPhoneNumber)
+>> 
+<<
+/V ()
+/T (patientsRelationshipToInsuredOther)
+>> 
+<<
+/V ()
+/T (npi)
+>> 
+<<
+/V ()
+/T (patientsEmployerOrSchool)
+>> 
+<<
+/V ()
+/T (datesOfService6ToMonth)
+>> 
+<<
+/V ()
+/T (datesOfService6ToDay)
+>> 
+<<
+/V ()
+/T (insuredsState)
+>> 
+<<
+/V ()
+/T (patientsCity)
+>> 
+<<
+/V ()
+/T (placeOfService6)
+>> 
+<<
+/V ()
+/T (placeOfService5)
+>> 
+<<
+/V ()
+/T (placeOfService4)
+>> 
+<<
+/V ()
+/T (placeOfService3)
+>> 
+<<
+/V ()
+/T (placeOfService2)
+>> 
+<<
+/V ()
+/T (placeOfService1)
+>> 
+<<
+/V ()
+/T (datesOfService6FromDay)
+>> 
+<<
+/V ()
+/T (datesOfService2ToDay)
+>> 
+<<
+/V ()
+/T (chargesCents6)
+>> 
+<<
+/V ()
+/T (datesOfService3FromMonth)
+>> 
+<<
+/V ()
+/T (chargesCents5)
+>> 
+<<
+/V ()
+/T (chargesCents4)
+>> 
+<<
+/V ()
+/T (chargesCents3)
+>> 
+<<
+/V ()
+/T (chargesCents2)
+>> 
+<<
+/V ()
+/T (chargesCents1)
+>> 
+<<
+/V ()
+/T (outsideLabYes)
+>> 
+<<
+/V ()
+/T (otherInsuredsSexFemale)
+>> 
+<<
+/V ()
+/T (patientStatusSingle)
+>> 
+<<
+/V ()
+/T (charges2)
+>> 
+<<
+/V ()
+/T (charges1)
+>> 
+<<
+/V ()
+/T (fecablcklung)
+>> 
+<<
+/V ()
+/T (serviceFacilityLocationInfo)
+>> 
+<<
+/V ()
+/T (insuredsAreaCode)
+>> 
+<<
+/V ()
+/T (conditionRelatedToEmploymentNo)
+>> 
+<<
+/V ()
+/T (modifier2_1)
+>> 
+<<
+/V ()
+/T (pica2)
+>> 
+<<
+/V ()
+/T (insuredsBirthYear)
+>> 
+<<
+/V ()
+/T (insuredsAddressNoStreet)
+>> 
+<<
+/V ()
+/T (patientsAreaCode)
+>> 
+<<
+/V ()
+/T (conditionRelatedToOtherAccidentNo)
+>> 
+<<
+/V ()
+/T (modifier4_1)
+>> 
+<<
+/V ()
+/T (datesOfService2ToMonth)
+>> 
+<<
+/V ()
+/T (datesOfService4FromMonth)
+>> 
+<<
+/V ()
+/T (patientsAccountNo)
+>> 
+<<
+/V ()
+/T (modifier6_1)
+>> 
+<<
+/V ()
+/T (renderingProvider6)
+>> 
+<<
+/V ()
+/T (renderingProvider5)
+>> 
+<<
+/V ()
+/T (medicare)
+>> 
+<<
+/V ()
+/T (renderingProvider4)
+>> 
+<<
+/V ()
+/T (renderingProvider3)
+>> 
+<<
+/V ()
+/T (diagnosisPointer1)
+>> 
+<<
+/V ()
+/T (renderingProvider2)
+>> 
+<<
+/V ()
+/T (datesOfService2FromYear)
+>> 
+<<
+/V ()
+/T (diagnosisPointer2)
+>> 
+<<
+/V ()
+/T (datesOfService2ToYear)
+>> 
+<<
+/V ()
+/T (renderingProvider1)
+>> 
+<<
+/V ()
+/T (diagnosisPointer3)
+>> 
+<<
+/V ()
+/T (diagnosisPointer4)
+>> 
+<<
+/V ()
+/T (diagnosisPointer5)
+>> 
+<<
+/V ()
+/T (insuredsBirthMonth)
+>> 
+<<
+/V ()
+/T (diagnosisPointer6)
+>> 
+<<
+/V ()
+/T (datesOfService1ToYear)
+>> 
+<<
+/V ()
+/T (patientsInsurancePlanOrProgram)
+>> 
+<<
+/V ()
+/T (diagnosis2_2)
+>> 
+<<
+/V ()
+/T (patientCurrentIllnessDay)
+>> 
+<<
+/V ()
+/T (insuredsPolicyOrGroupNumber)
+>> 
+<<
+/V ()
+/T (insuredsNameLastFirstMiddleInitial)
+>> 
+<<
+/V ()
+/T (diagnosis4_2)
+>> 
+<<
+/V ()
+/T (insuredsSignature)
+>> 
+<<
+/V ()
+/T (patientUnableToWorkFromYear)
+>> 
+<<
+/V ()
+/T (priorAuthorizationNumber)
+>> 
+<<
+/V ()
+/T (patientsBirthDay)
+>> 
+<<
+/V ()
+/T (datesOfService5FromMonth)
+>> 
+<<
+/V ()
+/T (patientsRelationshipToInsuredChild)
+>> 
+<<
+/V ()
+/T (datesOfService3FromYear)
+>> 
+<<
+/V ()
+/T (emg6)
+>> 
+<<
+/V ()
+/T (patientUnableToWorkToDay)
+>> 
+<<
+/V ()
+/T (emg5)
+>> 
+<<
+/V ()
+/T (emg4)
+>> 
+<<
+/V ()
+/T (emg3)
+>> 
+<<
+/V ()
+/T (emg2)
+>> 
+<<
+/V ()
+/T (emg1)
+>> 
+<<
+/V ()
+/T (datesOfService5ToDay)
+>> 
+<<
+/V ()
+/T (patientsAddressNoStreet)
+>> 
+<<
+/V ()
+/T (reservedForLocalUse)
+>> 
+<<
+/V ()
+/T (insuredsSexFemale)
+>> 
+<<
+/V ()
+/T (datesOfService6ToYear)
+>> 
+<<
+/V ()
+/T (reservedForLocalUse2)
+>> 
+<<
+/V ()
+/T (datesOfService1ToDay)
+>> 
+<<
+/V ()
+/T (datesOfService5ToYear)
+>> 
+<<
+/V ()
+/T (patientPartTimeStudent)
+>> 
+<<
+/V ()
+/T (totalChargeDollars)
+>> 
+<<
+/V ()
+/T (insuredsEmployerOrSchool)
+>> 
+<<
+/V ()
+/T (patientFirstDateSimilarIllnessMonth)
+>> 
+<<
+/V ()
+/T (epsdtFamilyPlan1)
+>> 
+<<
+/V ()
+/T (epsdtFamilyPlan2)
+>> 
+<<
+/V ()
+/T (epsdtFamilyPlan3)
+>> 
+<<
+/V ()
+/T (datesOfService6FromMonth)
+>> 
+<<
+/V ()
+/T (champva)
+>> 
+<<
+/V ()
+/T (epsdtFamilyPlan4)
+>> 
+<<
+/V ()
+/T (epsdtFamilyPlan5)
+>>]
+>>
+>>
+endobj 
+trailer
+
+<<
+/Root 1 0 R
+>>
+%%EOF
