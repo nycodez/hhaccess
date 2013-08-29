@@ -1,0 +1,25 @@
+#menu ul {
+	margin: 0 50 0 0;
+	list-style: none;
+}
+#menu ul li {
+	float: left;
+	font: 1em Verdana;
+	margin-top: 15px;
+	margin-right: 40px;
+	text-transform: uppercase;
+}
+.dashboardWidget {
+	overflow: auto;
+	float: left;
+	border: solid 1px blue;
+	margin: 20 0 20 20;
+	padding: 10px;
+	width: 400px;
+	height: 300px;
+}
+.dashboardWidget h3 {
+	margin: 0 0 10 0;
+	font: 1.1em Tahoma;
+	text-transform: uppercase;
+}
