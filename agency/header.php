@@ -44,6 +44,7 @@ body {
 	text-align: right;
 }
 .dashboardWidget {
+	overflow: auto;
 	float: left;
 	border: solid 1px blue;
 	margin: 20 0 20 20;
@@ -72,16 +73,18 @@ body {
 	text-decoration: none;
 	color: blue;
 }
+.defaultListOptions {
+	text-align: right;
+}
 .defaultForm {
-	margin: 50px;
 	border: solid 1px #bbbbbb;
 	border-radius: 10px;
 	padding: 20px;
-	margin: 50 auto 50;
+	margin: 20 auto 20;
 	width: 500px;
 	background-color: #EFF9FC;
 }
-.defaultForm input:not([type=submit]):not([type=file]):not([type=button]), textarea {
+.defaultForm input:not([type=submit]):not([type=file]):not([type=button]):not([type=checkbox]), textarea, select {
 	width: 300px;
 	margin: 10px;
 	padding: 3px;
@@ -129,6 +132,7 @@ body {
 	<li><a href="/agency/clients">Clients</a></li>
 	<li><a href="/agency/attendants">Attendants</a></li>
 	<li><a href="/agency/users">Agency Staff</a></li>
+	<li><a href="/agency/submit">Submit Forms</a></li>
 	<li><a href="/agency/reports">Reports</a></li>
 	<li><a href="/agency/logout">Logout</a></li>
 	</ul>

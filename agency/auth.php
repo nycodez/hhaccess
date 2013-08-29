@@ -41,7 +41,7 @@ function authenticateUser($login, $password)
                 fwrite($f, $line, strlen($line));
                 fclose($f);*/
 
-                echo '<p><b>Username/Password combination Incorrect.</b> IP address logged.</p>';
+		require 'login.php';
 
                 exit;
         }

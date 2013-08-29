@@ -26,6 +26,66 @@ elseif($_REQUEST['func'] == 'addAssignment')
 
 	header('Location: /agency/clients?id='. $info['assignmentClient']);
 }
+elseif($_REQUEST['func'] == 'Add Client')
+{
+	require '../config.php';
+	require 'auth.php';
+
+	$info = $_REQUEST[$_REQUEST['formName']];
+
+	$qs = BuildInsertString('clients', $info, true);
+	$d = mysql_query($qs, $conn);
+	$clientId = mysql_insert_id();
+
+	header('Location: /agency/clients?id='. $clientId);
+}
+elseif($_REQUEST['func'] == 'addClient')
+{
+	require 'header.php';
+	require_once 'hhaccess.php';
+	require_once 'formFunctions.inc.php';
+	require_once 'FormBuilder.php';
+
+	echo '<div id=main>';
+
+	$form = new FormBuilder();
+	$form->BeginForm();
+
+	echo '<h3>New Client Information</h3>
+		<label>Name</label>';
+	echo $form->AddTextField('clientName', '');
+
+	echo '<br />
+		<label>Phone</label>';
+	echo $form->AddTextField('clientPhone', '');
+
+	echo '<br />
+		<label>Address</label>';
+	echo $form->AddTextField('clientAddress', '');
+
+	echo '<br />
+		<label>City</label>';
+	echo $form->AddTextField('clientCity', '');
+
+	echo '<br />
+		<label>State</label>';
+	echo $form->AddTextField('clientState', '');
+
+	echo '<br />
+		<label>Zip</label>';
+	echo $form->AddTextField('clientZip', '');
+
+	echo '<br />
+		<label>Notes</label>';
+	echo $form->AddTextArea('clientNotes', '', 30, 5);
+
+	echo $form->AddButton('func', 'Cancel', array('onclick'=>"window.location.href = 'clients'"));
+	echo $form->AddSubmitButton('func', 'Add Client');
+
+	$form->EndForm();
+
+	echo '</div>';
+}
 elseif(isset($_GET['delAssignment']))
 {
 	require '../config.php';
@@ -35,6 +95,7 @@ elseif(isset($_GET['delAssignment']))
 
 	$info['assignmentActive'] = 0;
 	$info['assignmentRemovalDate'] = date("Y-m-d h:i:s");
+	$info['assignmentRemovalUser'] = $_SESSION['uid'];
 
 	$qs = "select `assignmentClient` from `assignments` where `assignmentID` = '$assignmentId'";
 	$d = mysql_query($qs, $conn);
@@ -55,7 +116,7 @@ elseif(isset($_GET['id']))
 	$id = $_REQUEST['id'];
 	$client = new Client();
 	$info = $client->getClient($id);
-	$assignments = $client->getAttendeesAssignedToClient($id);
+	$assignments = $client->getAttendantsAssignedToClient($id);
 
 	echo '<div id=main>';
 
@@ -63,7 +124,8 @@ elseif(isset($_GET['id']))
 	$form->BeginForm();
 	echo $form->AddHiddenField('clientID', $id);
 
-	echo '<label>Name</label>';
+	echo '<h3>Client Information</h3>
+		<label>Name</label>';
 	echo $form->AddTextField('clientName', $info['clientName']);
 
 	echo '<br />
@@ -97,6 +159,7 @@ elseif(isset($_GET['id']))
 
 	echo '</div>
 		<div class=defaultForm>
+		<h3>Attendant Assignment</h3>
 		<table width=100% class=defaultTable>
 		<tr>
 			<th>Attendant</th>
@@ -142,15 +205,16 @@ else
 	require_once 'hhaccess.php';
 
 	$client = new Client();
-	$clients = $client->getActiveClients();
+	$clients = $client->getActiveClientList();
 
 	echo '<div id=main>
 		<div class=defaultList>
-		<h3>List of Active Clients</h3>';
+		<h3>List of Active Clients</h3>
+		<div class=defaultListOptions><a href=/agency/clients?func=addClient>New Client</a></div>';
 
 	foreach($clients as $k => $v)
 	{
-		echo '<a href="clients?id='. $k .'">'. $v['name'] .'</a><br />';
+		echo '<a href="clients?id='. $k .'">'. $v .'</a><br />';
 	}
 
 	echo '</div>

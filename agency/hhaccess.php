@@ -13,7 +13,17 @@ class Client
 		$d = mysql_query($qs, $this->conn);
 		while($row = mysql_fetch_assoc($d))
 		{
-			$arr[$row['clientID']]['name'] = $row['clientName'];
+			$arr[$row['clientID']] = $row;
+		}
+		return $arr;
+	}
+	public function getActiveClientList()
+	{
+		$qs = "select * from `clients` where `clientActive` = 1 order by `clientName`";
+		$d = mysql_query($qs, $this->conn);
+		while($row = mysql_fetch_assoc($d))
+		{
+			$arr[$row['clientID']] = $row['clientName'];
 		}
 		return $arr;
 	}
@@ -27,7 +37,7 @@ class Client
 		}
 		return $arr;
 	}
-	public function getAttendeesAssignedToClient($id)
+	public function getAttendantsAssignedToClient($id)
 	{
 		$qs = "select * from `assignments` A
 			left join `attendants` T on A.assignmentAttendant = T.attendantID
@@ -105,6 +115,52 @@ class Attendant
 		}
 		return $arr;
 	}
+	public function getAttendantCallsNotCounted($id = false)
+	{
+		if(!$id)
+			return false;
+		$qs = "select * from `calls` L
+			left join `clients` C on L.callClient = C.clientID
+			where L.`callActive` = 1
+			and L.`callApproved` = 0
+			and L.`callCounted` = 0
+			and L.`callAttendant` = '$id'";
+		$d = mysql_query($qs, $this->conn);
+		while($row = mysql_fetch_assoc($d))
+		{
+			$arr[$row['callID']] = $row;
+		}
+		return $arr;
+	}
+	public function getDateRangeClockins($attendantId = false, $fromDate = false, $toDate = false)
+	{
+		$qs = "select * from `calls` L
+			left join `clients` C on L.callClient = C.clientID
+			left join `attendants` A on L.callAttendant = A.attendantID
+			where L.`callActive` = 1\n";
+
+		if($attendantId)
+		{
+			$qs .= "and L.`callAttendant` = '$id'\n";
+		}
+		if($fromDate)
+		{
+//			$fromDate = date("Y-m-d h:i:s", strtotime($fromDate));
+			$qs .= "and L.`callDate` >= '$fromDate'\n";
+		}
+		if($toDate)
+		{
+			$toDate = date("Y-m-d h:i:s", strtotime($toDate));
+//			$qs .= "and L.`callDate` <= '$toDate'\n";
+		}
+
+		$d = mysql_query($qs, $this->conn);
+		while($row = mysql_fetch_assoc($d))
+		{
+			$arr[$row['callID']] = $row;
+		}
+		return $arr;
+	}
 }
 class User 
 {
@@ -136,6 +192,44 @@ class User
 	public function getUser($id)
 	{
 		$qs = "select * from `users` where `userID` = '$id'";
+		$d = mysql_query($qs, $this->conn);
+		while($row = mysql_fetch_assoc($d))
+		{
+			$arr = $row;
+		}
+		return $arr;
+	}
+}
+class Form
+{
+	public function __construct()
+	{
+		global $conn;
+		$this->conn = $conn;
+	}
+	public function getActiveForms()
+	{
+		$qs = "select * from `forms` where `formActive` = 1 order by `formName`";
+		$d = mysql_query($qs, $this->conn);
+		while($row = mysql_fetch_assoc($d))
+		{
+			$arr[$row['formID']] = $row;
+		}
+		return $arr;
+	}
+	public function getActiveFormList()
+	{
+		$qs = "select formID,formName from `forms` where `formActive` = 1 order by `formName`";
+		$d = mysql_query($qs, $this->conn);
+		while($row = mysql_fetch_assoc($d))
+		{
+			$arr[$row['formID']] = $row['formName'];
+		}
+		return $arr;
+	}
+	public function getForm($id)
+	{
+		$qs = "select * from `forms` where `formID` = '$id'";
 		$d = mysql_query($qs, $this->conn);
 		while($row = mysql_fetch_assoc($d))
 		{
