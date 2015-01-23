@@ -1,26 +1,15 @@
 <?php
-if($_REQUEST['func'] == 'Submit')
-{
-	echo 'BUSTA';
-}
-elseif($_REQUEST['func'] == 'OK')
-{
-	echo 'SUCKA';
-}
-elseif($_REQUEST['func'] == 'Sign Up')
+if($_REQUEST['func'] == 'Sign Up')
 {
 	require 'config.php';
 
 	$info = $_REQUEST[$_REQUEST['formName']];
-pr($info);
-exit;
-	$id = $info['attendantID'];
-	unset($info['attendantID']);
+	$info['demoAddress'] = $_SERVER['REMOTE_ADDR'];
 
-	$qs = BuildUpdateString('attendants', "`attendantID`='$id'",$info, true);
+	$qs = BuildInsertString('demos', $info, true);
 	$d = mysql_query($qs, $conn);
 
-	header('Location: /agency/attendants');
+	header('Location: /signupthanks');
 }
 else
 {
