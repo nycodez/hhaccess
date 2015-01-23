@@ -1,8 +1,8 @@
 <?php
 $uri = explode('.', $_SERVER['SERVER_NAME']);
 define('DBNAME', $uri[0]);
-define('DBUSER', 'hhaccess');
-define('DBPASS', 'wQmTGAE2uqQ3fJ8m');
+define('DBUSER', 'w3b4pp');
+define('DBPASS', 'w4b4ppP4$$');
 define('DBHOST', 'localhost');
 function connectDB($database = DBNAME, $user = DBUSER, $pass = DBPASS, $hostname = DBHOST)
 {

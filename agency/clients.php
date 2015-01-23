@@ -101,7 +101,7 @@ elseif(isset($_GET['delAssignment']))
 	$d = mysql_query($qs, $conn);
 	list($clientId) = mysql_fetch_row($d);
 
-	$qt = BuildUpdateString('assignments', "`assignmentId`='$assignmentId'", $info, true);
+	$qt = BuildUpdateString('assignments', "`assignmentID`='$assignmentId'", $info, true);
 	$e = mysql_query($qt, $conn);
 
 	header('Location: /agency/clients?id='. $clientId);
