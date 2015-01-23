@@ -1,5 +1,5 @@
 <?php
-if($_REQUEST['func'] == 'Preview')
+if($_REQUEST['func'] == 'Generate')
 {
 	require '../config.php';
 	require 'auth.php';
@@ -89,9 +89,9 @@ else
 	$form = new FormBuilder();
 	$form->BeginForm();
 
-	echo '<h3>Submit a form for payment</h3>';
+	echo '<h3>Generate a form for payment</h3>';
 
-	echo $form->AddSelect('formID', 'Select a form to submit', $formularios);
+	echo $form->AddSelect('formID', 'Select a form to fill out', $formularios);
 
 	echo '<br />';
 
@@ -103,7 +103,7 @@ else
 
 	echo '<br />';
 
-	echo $form->AddSubmitButton('func', 'Preview');
+	echo $form->AddSubmitButton('func', 'Generate');
 
 	$form->EndForm();
 
