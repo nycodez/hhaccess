@@ -55,7 +55,7 @@
 			$fdf = $this->forge_fdf('', $fdf_data_strings, $fdf_data_names, $fields_hidden, $fields_readonly);
 			
 			// Save the fdf file temporarily - make sure the server has write permissions in the folder you specify in tempnam()
-			$fdf_fn = tempnam(".", "fdf");
+			$fdf_fn = tempnam("/fdftmp", "fdf");
 			$fp = fopen($fdf_fn, 'w');
 			
 			if($fp) {
@@ -68,7 +68,7 @@
 				
 				// Actually make the PDF by running pdftk - make sure the path to pdftk is correct
 				// The PDF will be output directly to the browser - apart from the original PDF file, no actual PDF wil be saved on the server.
-				passthru("/usr/local/bin/pdftk $pdf_original fill_form $fdf_fn output - flatten");
+				passthru("/usr/bin/pdftk $pdf_original fill_form $fdf_fn output - flatten");
 				
 				// delete temporary fdf file
 				unlink( $fdf_fn ); 

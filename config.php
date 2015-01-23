@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('America/New_York');
 $uri = explode('.', $_SERVER['SERVER_NAME']);
 define('DBNAME', $uri[0]);
 define('DBUSER', 'w3b4pp');

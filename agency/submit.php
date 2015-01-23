@@ -55,7 +55,6 @@ if($_REQUEST['func'] == 'Preview')
 
 	// Finally make the actual PDF file!
 	$pdfmaker->make_pdf($fdf_data_strings, $fdf_data_names, $fields_hidden, $fields_readonly, $pdf_original, $pdf_filename);
-	exit;
 
 	$qs = BuildUpdateString('clients', "`clientID`='$id'",$info, true);
 	$d = mysql_query($qs, $conn);

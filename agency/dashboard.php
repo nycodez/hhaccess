@@ -17,10 +17,6 @@ foreach($todaysClockins as $k => $v)
 ?>
 </div>
 
-<div class=dashboardWidget>
-	<h3>This Week to Date</h3>
-</div>
-
 <br style="clear: both;" />
 </div>
 <?php
