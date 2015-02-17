@@ -6,8 +6,8 @@
 # http://code.google.com/p/sequel-pro/
 #
 # Host: hhaccess.com (MySQL 5.1.73)
-# Database: demo
-# Generation Time: 2015-01-23 12:14:46 +0000
+# Database: hhaccess
+# Generation Time: 2015-02-17 15:14:57 +0000
 # ************************************************************
 
 
@@ -30,7 +30,7 @@ CREATE TABLE `assignments` (
   `assignmentActive` tinyint(1) DEFAULT '1',
   `assignmentRemovalDate` timestamp NULL DEFAULT NULL,
   `assignmentRemovalUser` int(11) DEFAULT NULL,
-  `assignmentStatus` enum('IN','OUT') DEFAULT 'OUT',
+  `assignmentStatus` varchar(30) DEFAULT NULL,
   `assignmentDate` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `assignmentID` int(11) unsigned NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`assignmentID`)
@@ -55,30 +55,16 @@ CREATE TABLE `attendants` (
   PRIMARY KEY (`attendantID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-LOCK TABLES `attendants` WRITE;
-/*!40000 ALTER TABLE `attendants` DISABLE KEYS */;
-
-INSERT INTO `attendants` (`attendantName`, `attendantPhone`, `attendantAddress`, `attendantCity`, `attendantState`, `attendantZip`, `attendantNotes`, `attendantSecret`, `attendantActive`, `attendantID`)
-VALUES
-	('Annie Attendant','2122039069','123 Caregiver Lane','New York','NY','10001','A great caregiver',12345,1,54321);
-
-/*!40000 ALTER TABLE `attendants` ENABLE KEYS */;
-UNLOCK TABLES;
 
 
 # Dump of table calls
 # ------------------------------------------------------------
 
 CREATE TABLE `calls` (
-  `callCid` varchar(10) DEFAULT NULL,
-  `callStatus` enum('IN','OUT') DEFAULT 'OUT',
-  `callClient` int(11) DEFAULT NULL,
-  `callAttendant` int(11) DEFAULT NULL,
   `callDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `callApproved` tinyint(1) DEFAULT '0',
   `callCounted` tinyint(1) DEFAULT '0',
-  `callJson` text,
-  `callLang` char(2) DEFAULT NULL,
+  `callAttendant` int(11) DEFAULT NULL,
   `callActive` tinyint(1) DEFAULT '1',
   `callID` int(11) unsigned NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`callID`)
@@ -102,15 +88,6 @@ CREATE TABLE `clients` (
   PRIMARY KEY (`clientID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-LOCK TABLES `clients` WRITE;
-/*!40000 ALTER TABLE `clients` DISABLE KEYS */;
-
-INSERT INTO `clients` (`clientName`, `clientPhone`, `clientAddress`, `clientCity`, `clientState`, `clientZip`, `clientNotes`, `clientActive`, `clientID`)
-VALUES
-	('Grateful Client','2123752553','456 There Court','New York','NY','10024','A nice person',1,1);
-
-/*!40000 ALTER TABLE `clients` ENABLE KEYS */;
-UNLOCK TABLES;
 
 
 # Dump of table forms
@@ -124,15 +101,6 @@ CREATE TABLE `forms` (
   PRIMARY KEY (`formID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-LOCK TABLES `forms` WRITE;
-/*!40000 ALTER TABLE `forms` DISABLE KEYS */;
-
-INSERT INTO `forms` (`formID`, `formActive`, `formName`, `formFile`)
-VALUES
-	(1,1,'cms1500','cms1500.pdf');
-
-/*!40000 ALTER TABLE `forms` ENABLE KEYS */;
-UNLOCK TABLES;
 
 
 # Dump of table sessions
@@ -168,15 +136,6 @@ CREATE TABLE `users` (
   PRIMARY KEY (`userID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-LOCK TABLES `users` WRITE;
-/*!40000 ALTER TABLE `users` DISABLE KEYS */;
-
-INSERT INTO `users` (`userName`, `userEmail`, `userLogin`, `userPass`, `userPhone`, `userAddress`, `userCity`, `userState`, `userZip`, `userNotes`, `userActive`, `userID`)
-VALUES
-	('Loyal User','user@example.com','luser','password','2122039012','153 W 78th St 1A','New York','NY','10002','Full Time dispatcher / Employee',1,1);
-
-/*!40000 ALTER TABLE `users` ENABLE KEYS */;
-UNLOCK TABLES;
 
 
 
@@ -186,4 +145,3 @@ UNLOCK TABLES;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
